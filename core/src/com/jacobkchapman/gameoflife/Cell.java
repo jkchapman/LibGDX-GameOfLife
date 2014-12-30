@@ -1,6 +1,7 @@
 package com.jacobkchapman.gameoflife;
 
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 
 public class Cell {
 	
@@ -21,12 +22,12 @@ public class Cell {
 	}
 	
 	public void draw() {
-		if( alive && shape.getCurrentType() == ShapeRenderer.ShapeType.Line) {
-			shape.set( ShapeRenderer.ShapeType.Filled);
+		if( alive && shape.getCurrentType() == ShapeType.Line) {
+			shape.set( ShapeType.Filled);
 		}
 		shape.rect( x * width, y * height, width, height);
-		if( shape.getCurrentType() == ShapeRenderer.ShapeType.Filled) {
-			shape.set( ShapeRenderer.ShapeType.Line);
+		if( shape.getCurrentType() == ShapeType.Filled) {
+			shape.set( ShapeType.Line);
 		}
 	}
 	
