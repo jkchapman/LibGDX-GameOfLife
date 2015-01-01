@@ -47,7 +47,7 @@ public class SetupScreen implements Screen {
 		}
 		
 		//press / hold space to activate simulation
-		if(Gdx.input.isKeyPressed(Keys.SPACE)) {
+		if(Gdx.input.isKeyPressed(Keys.C)) {
 			game.setScreen(new SimScreen(game));
 		}
 
